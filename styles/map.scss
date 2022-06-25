@@ -1,0 +1,85 @@
+.mapMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 140px;
+
+  div.mapMainCont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+  }
+
+  div.mapButtonCont {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    position: relative;
+    z-index: 10;
+
+    button {
+      margin: 10px;
+    }
+  }
+
+  h4 {
+    margin: 20px 0 10px;
+  }
+
+  h1 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 48px;
+    font-family: "Hahmlet" !important;
+  }
+}
+
+img.ink {
+  position: absolute;
+}
+
+button.swal2-confirm.swal2-styled {
+  background-color: #000;
+}
+
+.MapButtonWrap {
+  display: flex;
+}
+
+.MapButtonWrap button {
+  margin: 4px;
+}
+
+@media all and (min-width: 900px) and (max-width: 9999px) {
+  div.swal2-html-container {
+    padding: 16px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .mapMain {
+    margin-top: 70px;
+  }
+  .mapMainCont img {
+    width: 50%;
+    margin: 10px auto;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 1199px) {
+  .MapButtonWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      width: 300px;
+      margin: 4px;
+    }
+  }
+}

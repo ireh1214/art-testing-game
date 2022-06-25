@@ -1,0 +1,66 @@
+.GuestWrap {
+  width: 70%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  padding: 80px;
+
+  h2 {
+    width: 30%;
+    font-size: 18px;
+    text-align: right;
+    padding-bottom: 6px;
+    margin: 24px 0 24px auto;
+    border-bottom: 1.5px solid black;
+  }
+
+  .GuestRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      width: 35%;
+      position: relative;
+      margin: 10px;
+    }
+
+    a img {
+      transition: 0.15s all ease-in-out;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.11), 0 3px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    a img:hover {
+      transform: scale(1.01);
+      overflow: hidden;
+      box-shadow: 0 2px 15px rgba(177, 143, 104, 0.5),
+        0 3px 15px rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+    }
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .GuestWrap {
+    width: 100%;
+    margin: 80px auto;
+    padding: 80px 20px;
+    a {
+      width: 40% !important;
+      margin: 4px 4px !important;
+    }
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1199px) {
+  .GuestWrap {
+    width: 90%;
+  }
+}
