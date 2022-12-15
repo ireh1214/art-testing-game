@@ -15,20 +15,25 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/Guest": [
+    "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Guest.js"
+      "static/chunks/pages/index.js"
     ],
-    "/Home": [
+    "/Member": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Home.js"
+      "static/chunks/pages/Member.js"
     ],
-    "/World": [
+    "/Member/ID1": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/World.js"
+      "static/chunks/pages/Member/ID1.js"
+    ],
+    "/Notice": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Notice.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
@@ -39,16 +44,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-    ],
-    "/guest/ID2": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/guest/ID2.js"
-    ],
-    "/map/Main": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/map/Main.js"
     ]
   },
   "ampFirstPages": []

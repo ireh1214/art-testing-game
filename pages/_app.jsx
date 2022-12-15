@@ -3,15 +3,13 @@ import React from "react";
 import "react-responsive-modal/styles.css";
 import "../styles/main.scss";
 import "../styles/notice_system.scss";
-import "../styles/world.scss";
-import "../styles/guest.scss";
-import "../styles/index.scss";
 import "../styles/Layout.scss";
-import "../styles/member.scss";
-import "../styles/map.scss";
+import "../styles/swiperSlide.scss";
+
 import Header from "../components/Header";
 import Layout from "../components/Layout";
 import Script from "next/script";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -43,8 +41,16 @@ function MyApp({ Component, pageProps }) {
 
       <Script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js" />
       <Script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js" />
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Node93</title>
+      </Head>
 
-      <Header />
+      <Header>
+        <p className="text-white text-2xl font-black flex justify-center items-end pb-5 h-[100px]">
+          NODE.93
+        </p>
+      </Header>
 
       <Layout>
         <Component {...pageProps} />

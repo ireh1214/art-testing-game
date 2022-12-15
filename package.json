@@ -1,5 +1,5 @@
 {
-  "name": "ink2022",
+  "name": "node93",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -20,16 +20,18 @@
     "react-router-dom": "^6.2.2",
     "react-slide-routes": "^2.0.0",
     "sass": "^1.48.0",
-    "spinners-react": "^1.0.6",
     "sweetalert2": "^11.3.10",
-    "typescript": "^4.5.4",
+    "swiper": "^8.4.5",
     "yarn": "^1.22.17"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "eslint": "8.6.0",
     "eslint-config-next": "12.0.8",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1"
+    "postcss": "^8.4.20",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.2.4"
   }
 }

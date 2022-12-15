@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  // background-color: #333;
+  background-image: url("/img/bgtest.png");
+  background-size: cover;
+}
+
 html,
 body {
   padding: 0;
@@ -20,35 +30,6 @@ a {
 
 a:hover {
   color: #da4500;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Poor+Story&family=Noto+Serif+KR:wght@300;400;700;900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
-
-@font-face {
-  font-family: "timmer";
-  src: url("/fonts/timmer.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Hahmlet-ExtraBold";
-  src: url("/fonts/Hahmlet-ExtraBold.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "Hahmlet-Light";
-  src: url("/fonts/Hahmlet-Light.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "Hahmlet-Regular";
-  src: url("/fonts/Hahmlet-Regular.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "Hahmlet-SemiBold";
-  src: url("/fonts/Hahmlet-SemiBold.otf") format("truetype");
 }
 
 ::-moz-selection {
@@ -87,7 +68,6 @@ img {
 // }
 
 body {
-  background-image: url(/img/bg.png);
   -webkit-touch-callout: none;
   min-height: 100vh;
   height: 100%;
@@ -109,20 +89,25 @@ body {
 
 // header
 header {
+  color: white;
   width: 100%;
   height: 50px;
-  background-color: white;
+  background-color: #000;
   font-family: "timmer";
   position: sticky;
   z-index: 1000;
-  color: #000;
   top: 0;
   opacity: 0.8;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.11), 0 3px 15px rgba(0, 0, 0, 0.11);
+  // border-top: 1px solid #000;
+  // box-shadow: 0 2px 15px rgba(0, 0, 0, 0.11), 0 3px 15px rgba(0, 0, 0, 0.11);
   // -webkit-backdrop-filter: saturate(180%) blur(15px);
   // -moz-backdrop-filter: saturate(180%) blur(15px);
   // -o-backdrop-filter: saturate(180%) blur(15px);
   // backdrop-filter: saturate(180%) blur(15px);
+
+  .hover {
+    opacity: 1;
+  }
 
   .header {
     max-width: 900px;
@@ -245,13 +230,13 @@ header {
 
 .bold {
   font-weight: 900;
-  color: #8e2a11;
+  color: #ff0a0a;
 }
 
 .title {
   font-size: 1.6rem;
   font-weight: 900;
-  color: #8e2a11;
+  color: #ff0a0a;
   line-height: 3;
   border-bottom: 1px solid #ccc;
 }

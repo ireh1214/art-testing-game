@@ -6,35 +6,25 @@ export default function header() {
     <header>
       <div className="header">
         <li>
-          <Link href="/Notice">
-            <a>NOTICE</a>
-          </Link>
+          <Link href="/Notice">NOTICE</Link>
         </li>
 
         <li>
-          <Link href="/World">
-            <a>WORLD</a>
-          </Link>
+          <Link href="/World">WORLD</Link>
         </li>
 
-        <li>
+        {/* <li>
           <Link href="/Home">
-            <a>
-              <img src="/img/logo.png" />
-            </a>
+            <img src="/img/logo.png" />
           </Link>
+        </li> */}
+
+        <li>
+          <Link href="/System">SYSTEM</Link>
         </li>
 
         <li>
-          <Link href="/System">
-            <a>SYSTEM</a>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/Guest">
-            <a>GUESTS</a>
-          </Link>
+          <Link href="/Member">MEMBER</Link>
         </li>
       </div>
     </header>

@@ -2,8 +2,8 @@
   "character": [
     {
       "id": 1,
-      "catchPhrase": "(-)",
-      "award": "(-)",
+      "catchPhrase": "Sample Test number1",
+      "award": "Sample Test number2 & award",
       "name": "이름을 입력해주세요 | One",
       "famous": "★☆☆☆☆",
       "age": "115",
